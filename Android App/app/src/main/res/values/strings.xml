@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Automation Station</string>
+    <string-array name="Unit_to_Use">
+        <item>Minutes</item>
+        <item>Hours</item>
+        <item>Days</item>
+    </string-array>
+</resources>

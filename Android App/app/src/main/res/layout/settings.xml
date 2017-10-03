@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Graph Settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="11dp"
+            android:id="@+id/textView4"
+            android:textSize="20sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_below="@+id/timeText"
+            android:layout_alignLeft="@+id/timeText"
+            android:layout_alignStart="@+id/timeText"
+            android:id="@+id/editText_startdate"
+            android:layout_toStartOf="@+id/textView7"
+            android:focusable="false"
+            android:layout_alignRight="@+id/textView4"
+            android:layout_alignEnd="@+id/textView4" />
+
+        <TextView
+            android:text="Date End:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:layout_below="@+id/editText_startdate"
+            android:layout_alignLeft="@+id/editText_startdate"
+            android:layout_alignStart="@+id/editText_startdate" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText_endDate"
+            android:layout_below="@+id/textView5"
+            android:layout_alignLeft="@+id/textView5"
+            android:layout_alignStart="@+id/textView5"
+            android:layout_alignRight="@+id/editText_startdate"
+            android:layout_alignEnd="@+id/editText_startdate"
+            android:focusable="false" />
+
+        <TextView
+            android:text="Start Time:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:layout_below="@+id/editText_endDate"
+            android:layout_alignLeft="@+id/editText_endDate"
+            android:layout_alignStart="@+id/editText_endDate" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText_starttime"
+            android:layout_below="@+id/textView6"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_alignStart="@+id/textView6"
+            android:layout_alignRight="@+id/editText_endDate"
+            android:layout_alignEnd="@+id/editText_endDate"
+            android:focusable="false" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_below="@+id/textView9"
+            android:layout_alignLeft="@+id/textView9"
+            android:layout_alignStart="@+id/textView9"
+            android:id="@+id/editText_endTime"
+            android:layout_alignRight="@+id/editText_starttime"
+            android:layout_alignEnd="@+id/editText_starttime"
+            android:focusable="false" />
+
+        <Button
+            android:text="Return and Save Settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonSave"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="14dp" />
+
+        <TextView
+            android:text="Date Start:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timeText"
+            android:textSize="14sp"
+            android:layout_below="@+id/textView4"
+            android:layout_alignRight="@+id/textView4"
+            android:layout_alignEnd="@+id/textView4"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignStart="@+id/textView4" />
+
+        <TextView
+            android:text="X-Axis Units"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10"
+            android:layout_below="@+id/editText_endTime"
+            android:layout_alignLeft="@+id/editText_endTime"
+            android:layout_alignStart="@+id/editText_endTime"
+            android:visibility="invisible" />
+
+        <TextView
+            android:text="End Time:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9"
+            android:layout_below="@+id/editText_starttime"
+            android:layout_alignLeft="@+id/editText_starttime"
+            android:layout_alignStart="@+id/editText_starttime" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:entries="@array/Unit_to_Use"
+            android:layout_below="@+id/textView10"
+            android:layout_alignLeft="@+id/textView10"
+            android:layout_alignStart="@+id/textView10"
+            android:layout_alignRight="@+id/editText_endTime"
+            android:layout_alignEnd="@+id/editText_endTime"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:text="Use Lastest Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cbCurrentTime"
+            android:layout_alignTop="@+id/editText_endTime"
+            android:layout_toRightOf="@+id/editText_endTime"
+            android:layout_toEndOf="@+id/editText_endTime"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp" />
+
+        <CheckBox
+            android:text="Use Lastest Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cbEndDate"
+            android:layout_alignTop="@+id/editText_endDate"
+            android:layout_alignLeft="@+id/cbCurrentTime"
+            android:layout_alignStart="@+id/cbCurrentTime"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+</LinearLayout>
