@@ -17,5 +17,7 @@ While the database is no longer being managed, our process can be copied with fe
 
 ### Project Contributors
 Reagan Stovall   -UI/PCB Design
+
 Andrew Gates     -RunCode/Testing
+
 Andrew Klonitsko -JavaApp/DataBase
