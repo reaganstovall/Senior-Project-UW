@@ -1,2 +1,2 @@
 # Senior-Project-UW
-Senior Project for CES at UWT
+## Senior Project for CES at UWT
