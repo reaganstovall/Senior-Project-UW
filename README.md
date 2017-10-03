@@ -11,4 +11,11 @@ The UI is based on Python 3 and is set to display of a 7” touch screen. It req
 sudo apt-get install tkinter
 </pre>
 
- 
+### Phone App/Database
+While the database is no longer being managed, our process can be copied with few changes needed. The Phone App when used allows for viewing of sensors and emergency shutoff availablility. This was meant to be expanded, but was left as a framework for future updates instead.
+
+
+### Project Contributors
+Reagan Stovall   -UI/PCB Design
+Andrew Gates     -RunCode/Testing
+Andrew Klonitsko -JavaApp/DataBase
